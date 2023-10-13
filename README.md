@@ -21,7 +21,7 @@ A more detailed project introduction. What does this project do? Why is it usefu
 
 - Feature 1
 - Feature 2
-- Feature 3
+- Feature 3 
 - ...
 
 ## Installation
