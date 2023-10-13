@@ -1,6 +1,6 @@
 import json
 
-json_file_path = '/Users/nghiempt/Corporation/scientific_research/paper_policy/step-01-dataset/assets/json/dataset_random_250.json'
+json_file_path = '/Users/nghiempt/Corporation/scientific_research/paper_policy/task/manual/dataset_manual_200.json'
 
 with open(json_file_path, 'r') as file:
     data = json.load(file)
