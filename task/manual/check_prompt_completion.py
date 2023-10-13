@@ -8,9 +8,9 @@ with open(json_file_path, 'r') as file:
 
 for index, item in enumerate(data):
     print("========================== " +
-          str(index) + " times ==========================")
+          str(index) + " times ~~ " + str(item['package_name'])  + " ==========================")
     print(item['completion'])
-    if (index > 89):
+    if (index > 2):
         break
 
 # >>>>> Incorrect: 1\nIncomplete: 1\nInconsistent: 1 <<<<<
