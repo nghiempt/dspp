@@ -3,8 +3,11 @@ const fs = require("fs");
 
 const apiUrl = "https://www.llama2.ai/api";
 
+const input_json = "input1.json";
+const output_json = "output1.json";
+
 // Read prompts from input.json
-const prompts = JSON.parse(fs.readFileSync("input2.json"));
+const prompts = JSON.parse(fs.readFileSync(input_json));
 
 // Define an array to store the results
 const results = [];
@@ -49,7 +52,7 @@ async function processPrompt(prompt, index) {
     // Check if all prompts have been processed
     if (results.length === prompts.length) {
       // Save the results to output.json
-      fs.writeFileSync("output.json", JSON.stringify(results, null, 2));
+      fs.writeFileSync(output_json, JSON.stringify(results, null, 2));
       console.log("Results saved to output.json");
     }
   } catch (error) {
