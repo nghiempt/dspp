@@ -3,8 +3,8 @@ const fs = require("fs");
 
 const apiUrl = "https://www.llama2.ai/api";
 
-const input_json = "input1.json";
-const output_json = "output1.json";
+const input_json = "input5.json";
+const output_json = "output5.json";
 
 // Read prompts from input.json
 const prompts = JSON.parse(fs.readFileSync(input_json));
