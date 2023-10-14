@@ -4,6 +4,7 @@ from bardapi import Bard        # Custom API wrapper for the "Bard" service
 from dotenv import load_dotenv  # To load environment variables from a .env file
 # To interact with the operating system, especially for fetching and setting environment variables
 import os
+import time
 
 # Load environment variables from the .env file
 load_dotenv()
@@ -36,6 +37,8 @@ for index, item in enumerate(data):
 
     # Update the "completion" key of the item with the fetched response
     item["completion"] = response
+
+    time.sleep(5)
 
     print("~~~ Successfully ~~~\n")
 
