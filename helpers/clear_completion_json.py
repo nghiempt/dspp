@@ -2,7 +2,7 @@
 import json
 
 # Defining the file path of the JSON file we want to read.
-json_file_path = '/Users/nghiempt/Corporation/scientific_research/paper_policy/__bangnh_gpt4.0/assets/dataset_random_prompt_only.json'
+json_file_path = '/Users/nghiempt/Corporation/scientific_research/paper_policy/14_09_2023/origin/3.5_generate/input.json'
 
 # Opening the JSON file in read mode.
 with open(json_file_path, 'r') as file:
