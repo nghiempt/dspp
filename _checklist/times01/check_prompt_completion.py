@@ -1,6 +1,6 @@
 import json
 
-json_file_path = '/Users/nghiempt/Corporation/scientific_research/paper_policy/_checklist/times01/dataset_manual_100.json'
+json_file_path = 'origin_m100.json'
 
 
 with open(json_file_path, 'r') as file:
@@ -11,5 +11,5 @@ for index, item in enumerate(data):
           str(index + 2) + " times ==========================")
     print(item['completion'])
 
-    if (index > 1):
-        break
+    # if (index > 98):
+    #     break
