@@ -1,7 +1,7 @@
 import json
 
-input_json_file_path = '/Users/nghiempt/Corporation/scientific_research/paper_policy/_checklist/bard_generate.json'
-output_json_file_path = '/Users/nghiempt/Corporation/scientific_research/paper_policy/_checklist/fine_tune_by_bard.json'
+input_json_file_path = '/Users/nghiempt/Corporation/scientific_research/paper_policy/_checklist/llama_generate.json'
+output_json_file_path = '/Users/nghiempt/Corporation/scientific_research/paper_policy/_checklist/fine_tune_by_llama.json'
 
 with open(input_json_file_path, 'r') as input_file:
     data = json.load(input_file)
