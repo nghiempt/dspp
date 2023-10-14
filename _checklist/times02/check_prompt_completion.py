@@ -3,7 +3,7 @@ import time
 import select
 import sys
 
-json_file_path = '/Users/nguyennhathung/dspp/_checklist/times02/generate_by_gpt3.0.json'
+json_file_path = '/Users/nguyennhathung/dspp/_checklist/times02/result_ft_3.5.json'
 
 
 with open(json_file_path, 'r') as file:
