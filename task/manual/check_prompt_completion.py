@@ -1,6 +1,6 @@
 import json
 
-json_file_path = '/Users/nguyennhathung/dspp/task/manual/dataset_manual_200.json'
+json_file_path = 'task\manual\dataset_manual_100.json'
 
 
 with open(json_file_path, 'r') as file:
