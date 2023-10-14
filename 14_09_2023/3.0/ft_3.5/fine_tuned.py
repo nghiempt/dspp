@@ -8,8 +8,8 @@ import requests
 load_dotenv()
 
 # Define the file paths for input and output JSON files (provide actual paths)
-input_json_file_path = 'input1.json'
-output_json_file_path = 'output1.json'
+input_json_file_path = '/Users/nguyennhathung/dspp/14_09_2023/3.0/ft_3.5/input_random_250.json'
+output_json_file_path = '/Users/nguyennhathung/dspp/14_09_2023/3.0/ft_3.5/output_final.json'
 
 # Define the API endpoint URL
 url = "https://api.openai.com/v1/chat/completions"
