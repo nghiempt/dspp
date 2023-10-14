@@ -7,7 +7,7 @@ with open(json_file_path, 'r') as file:
     data = json.load(file)
 
 for index, item in enumerate(data):
-    print("========================== " +
+    print("\n========================== " +
           str(index) + " times ~~ " + str(item['package_name'])  + " ==========================")
     print(item['prompt'])
     if index < len(data) - 1:

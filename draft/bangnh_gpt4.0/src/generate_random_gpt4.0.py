@@ -5,7 +5,7 @@ import os
 
 load_dotenv()
 
-json_file_path = '../assets/dataset_random_prompt_only.json'
+json_file_path = '/Users/nghiempt/Corporation/scientific_research/paper_policy/task/bangnh_gpt4.0/assets/dataset_random_prompt_only2.json'
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
@@ -27,5 +27,5 @@ for index, item in enumerate(data):
     item["completion"] = assistant_reply
     print(assistant_reply)
 
-with open('../assets/dataset_random_gpt4.0.json', 'w') as json_file:
+with open('/Users/nghiempt/Corporation/scientific_research/paper_policy/task/bangnh_gpt4.0/assets/dataset_random_gpt4.0.json', 'w') as json_file:
     json.dump(data, json_file, indent=4)
