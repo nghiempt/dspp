@@ -13,8 +13,8 @@ load_dotenv()
 os.environ['_BARD_API_KEY'] = os.getenv("BARD_API_KEY")
 
 # Define the file path of the JSON file to read
-input_json_file_path = '/Users/nghiempt/Corporation/scientific_research/paper_policy/14_09_2023/bard/bard_generate/input1.json'       # Provide the path to the input JSON file
-output_json_file_path = '/Users/nghiempt/Corporation/scientific_research/paper_policy/14_09_2023/bard/bard_generate/output1.json'      # Provide the path to the output JSON file
+input_json_file_path = '/Users/nghiempt/Corporation/scientific_research/paper_policy/14_09_2023/bard/bard_generate/input5.1.json'       # Provide the path to the input JSON file
+output_json_file_path = '/Users/nghiempt/Corporation/scientific_research/paper_policy/14_09_2023/bard/bard_generate/output5.1.json'      # Provide the path to the output JSON file
 
 # Open and read the JSON file
 with open(input_json_file_path, 'r') as file:
