@@ -8,8 +8,8 @@ import os
 load_dotenv()
 
 # Define the file paths for input and output JSON files (provide actual paths)
-input_json_file_path = '/Users/nguyennhathung/dspp/14_09_2023/3.0/3.0_generate/input1.json'
-output_json_file_path = '/Users/nguyennhathung/dspp/14_09_2023/3.0/3.0_generate/output1.json'
+input_json_file_path = '/Users/nguyennhathung/dspp/14_09_2023/3.0/3.0_generate/input4.json'
+output_json_file_path = '/Users/nguyennhathung/dspp/14_09_2023/3.0/3.0_generate/output4.json'
 
 # Set the OpenAI API key using the value from environment variables
 openai.api_key = os.getenv("OPENAI_API_KEY")
