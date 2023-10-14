@@ -1,6 +1,6 @@
 import json
 
-json_file_path = 'origin_m100.json'
+json_file_path = 'ft_3.5_m2.json'
 
 
 with open(json_file_path, 'r') as file:
