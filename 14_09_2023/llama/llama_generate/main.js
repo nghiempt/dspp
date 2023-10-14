@@ -3,8 +3,8 @@ const fs = require("fs");
 
 const apiUrl = "https://www.llama2.ai/api";
 
-const input_json = "input4.json";
-const output_json = "output4.json";
+const input_json = "input2.json";
+const output_json = "output2.json";
 
 // Read prompts from input.json
 const prompts = JSON.parse(fs.readFileSync(input_json));
@@ -56,11 +56,6 @@ async function processPrompt(prompt, index) {
       console.log("Results saved to output.json");
     }
   } catch (error) {
-    results.push({
-      prompt: "Error",
-      completion: "Error", // Modify this to match your response structure
-      package_name: "Error", // Modify this to match your response structure
-    });
     console.error("Error:", error);
   }
 }
