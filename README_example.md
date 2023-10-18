@@ -112,5 +112,21 @@ and produces it's output.
 To execute the whole notebook, run all cells in order.
 
 
+| id            | appN           | package_name | iCr          | iCm         | iCs         |
+| ------------- | -------------  | ------------ | ------------ | -----------  |-----------  |
+| 1             | Once: Perfect Match Dating App | com.udates | 1 | 0 | 0 |
+| 2             | Photo Collage Maker Editor | cornera.touchretouch | 0 | 1 | 0 |
+| 3             | Pict2Cam | com.adriangl.pict2cam | 1 | 0 | 0 |
+| 4             | Blend Photo Editor – Effects | com.multiphotoblender.photomixer | 1 | 0 | 0 |
+| 5             | Wild Animal Photo Frames | com.appbites.wildanimalphotoframes | 1 | 0 | 0 |
+| 6             | Baby Photo Nice Baby wallpaper | com.cuteBaby.BabyPhotos | 1 | 0 | 0 |
+| 7             | Mobile Phone Photo Frames | freeappshouse.mobile.phone.photo.frames.editor | 1 | 0 | 0 |
+| 8             | CSL – Meet, Chat, Pla‪y & Date | com.jaumo.casual | 1 | 0 | 0 |
+| 9             | Body Plastic Surgery | com.ster.photo.surgery | 1 | 0 | 0 |
+| 10            | Family Photo Frame | com.Family.Photoframee | 1 | 0 | 0 |
+
+
+Full dataset can be found in the file `final_dataset/450.csv`
+
 ## License
 
