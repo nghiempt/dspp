@@ -77,7 +77,9 @@ incorrect,incomplete,inconsistent
 0,0,1
 0,1,0
 0,0,0
+0,1,1
 1,0,1
+errorxxxx
 0,1,1
 0,1,0
 0,1,0
@@ -88,9 +90,12 @@ incorrect,incomplete,inconsistent
 0,1,1
 0,0,1
 0,0,0
+errorxxxx
 0,1,1
 0,1,0
+errorxxxx
 1,0,1
+0,0,0
 0,0,0
 0,0,0
 0,0,0
@@ -109,6 +114,7 @@ incorrect,incomplete,inconsistent
 1,1,1
 1,1,1
 0,1,1
+errorxxxx
 0,1,1
 0,1,0
 1,0,1
@@ -128,11 +134,14 @@ incorrect,incomplete,inconsistent
 1,0,1
 1,0,1
 1,0,1
+0,0,0
 0,1,0
 1,1,1
 0,1,0
+errorxxxxx
 0,1,1
 0,0,0
+0,1,0
 1,0,1
 0,0,0
 0,0,1
@@ -199,6 +208,7 @@ incorrect,incomplete,inconsistent
 1,1,1
 0,0,0
 1,0,1
+errorxxxxx
 0,1,0
 0,0,0
 0,0,1
