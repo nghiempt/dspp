@@ -112,7 +112,7 @@ and produces it's output.
 To execute the whole notebook, run all cells in order.
 
 
-| id            | appN           | package_name | iCr          | iCm         | iCs         |
+| id            | appN           | pkgN | iCr          | iCm         | iCs         |
 | ------------- | -------------  | ------------ | ------------ | -----------  |-----------  |
 | 1             | Once: Perfect Match Dating App | com.udates | 1 | 0 | 0 |
 | 2             | Photo Collage Maker Editor | cornera.touchretouch | 0 | 1 | 0 |
