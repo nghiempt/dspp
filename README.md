@@ -6,7 +6,7 @@ Bang N. H.;
 Hung N. N.;
 Son X. H.;
 Nghia T. D.;
-Tuan
+Tuan L. T.;
 
 This paper has been submitted for publication in *Some Journal*.
 
