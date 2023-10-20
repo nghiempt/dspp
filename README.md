@@ -112,6 +112,7 @@ and produces it's output.
 To execute the whole notebook, run all cells in order.
 
 
+## Dataset detail
 | id            | appN           | pkgN | iCr          | iCm         | iCs         |
 | ------------- | -------------  | ------------ | ------------ | -----------  |-----------  |
 | 1             | Once: Perfect Match Dating App | com.udates | 1 | 0 | 0 |
@@ -125,8 +126,21 @@ To execute the whole notebook, run all cells in order.
 | 9             | Body Plastic Surgery | com.ster.photo.surgery | 1 | 0 | 0 |
 | 10            | Family Photo Frame | com.Family.Photoframee | 1 | 0 | 0 |
 
-
 Full dataset can be found in the file `result/final_dataset.csv`
+
+|Category|Number of apps|
+|---|---|
+| Photography| 347 apps|
+| Dating| 101 apps|
+| PhotographyPlay Pass| 1 apps|
+| Social| 1 apps|
+
+| Number of downloads |Number of apps|
+|---|---|
+|100+ to 5k+| 27 apps|
+|10K+ to 500K+| 295 apps|
+|1M+ to 50M+| 118 apps|
+|100M+ to 500M+| 10 apps|
 
 ## License
 
