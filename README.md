@@ -126,7 +126,7 @@ To execute the whole notebook, run all cells in order.
 | 10            | Family Photo Frame | com.Family.Photoframee | 1 | 0 | 0 |
 
 
-Full dataset can be found in the file `final_dataset/450.csv`
+Full dataset can be found in the file `result/final_dataset.csv`
 
 ## License
 
