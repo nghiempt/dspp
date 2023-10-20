@@ -1,0 +1,28 @@
+- Lấy 100 second manual train cho model generate completion
+
+- Lấy kết quả completion đó thay đổi qua message json file, sau đó convert qua jsonl
+
+- Fine tuning với jsonl đó
+
+- Lấy 100 first manual test trên model đã fine tuning
+
+- So sánh kết quả manual và predict
+
+
+# ========== STEP 1 ========== 
+pip install --upgrade openai
+
+# ========== STEP 2 ========== 
+export OPENAI_API_KEY="<OPENAI_API_KEY>"
+
+# ========== STEP 3 ========== 
+openai tools fine_tunes.prepare_data -f <LOCAL_FILE>
+
+# ========== STEP 4 ========== 
+openai api fine_tunes.create -t <TRAIN_FILE_ID_OR_PATH> -m <BASE_MODEL>
+
+# ========== STEP 5 ========== 
+openai api fine_tunes.follow -i <YOUR_FINE_TUNE_JOB_ID>
+
+# ========== STEP 6 ========== 
+openai api completions.create -m <FINE_TUNED_MODEL> -p <YOUR_PROMPT>
