@@ -2,8 +2,8 @@ import pandas as pd
 from sklearn.metrics import confusion_matrix
 
 # Read the actual and predicted CSV files into dataframes
-actual_df = pd.read_csv('/Users/nghiempt/Corporation/scientific_research/paper_policy/evaluation/case_04_gpt4.0/csv/actual.csv')
-predict_df = pd.read_csv('/Users/nghiempt/Corporation/scientific_research/paper_policy/evaluation/case_04_gpt4.0/csv/predict.csv')
+actual_df = pd.read_csv('/Users/nghiempt/Corporation/scientific_research/paper_policy/evaluation/case_03_gpt3.0/csv/actual.csv')
+predict_df = pd.read_csv('/Users/nghiempt/Corporation/scientific_research/paper_policy/evaluation/case_03_gpt3.0/csv/predict.csv')
 
 # Initialize an empty dictionary to store confusion matrices
 confusion_matrices = {}
