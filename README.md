@@ -81,14 +81,14 @@ After that, we continue to convert to JSONL in:
 
 Follow for this step to fine tuning GPT 3.5 turbo:
 
-1. Upload files
+1.Upload files
 
     curl https://api.openai.com/v1/files \
         -H "Authorization: Bearer $OPENAI_API_KEY" \
         -F "purpose=fine-tune" \
         -F "file=@path_to_your_file"
 
-2. Create a fine-tuning job
+2.Create a fine-tuning job
 
     curl https://api.openai.com/v1/fine_tuning/jobs \
         -H "Content-Type: application/json" \
