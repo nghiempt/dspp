@@ -1,17 +1,16 @@
-# Evaluating the Consistency Between Data Safety and Privacy Policies using Natural Language Processing
+# Unveiling Discrepancies in Android App Data Safety Declarations and Privacy Policies: An In-depth Analysis using Large Language Models
 
 by
-Nghiem P. T.;
-Bang N. H.;
-Hung N. N.;
-Son X. H.;
-Nghia T. D.;
-Tuan L. T.;
+Nghiem Pham Thanh;
+Bang Ngo Hai;
+Hung Nguyen Nhat;
+Xuan Son Ha;
+Nghia Duong-Trung;
+Tuan Le Thanh;
 
-This paper has been submitted for publication in *Some Journal*.
+Official code implementation for ICDE 24 paper Unveiling Discrepancies in Android App Data Safety Declarations and Privacy Policies: An In-depth Analysis using Large Language Models.
 
-> Brief description of what this paper is about (2-3 sentences). Include a
-> figure as well with the main result of your paper.
+> This paper identifies critical discrepancies in data safety declarations and privacy policies among 450 Android apps, raising concerns about user trust and legal implications. The study explores the potential of advanced techniques, like fine-tuning large language models, to monitor and verify app behaviors against their stated commitments. To promote transparency, the research provides a benchmark dataset and a list of examined Android apps, contributing to a more trustworthy app ecosystem.
 
 ![](figure)
 
@@ -20,7 +19,13 @@ This paper has been submitted for publication in *Some Journal*.
 
 ## Abstract
 
-> Paste here the abstract.
+This paper delves into the critical discrepancies observed between data safety declarations and privacy policies across 450 Android applications, bringing to light the issues of incompleteness, incorrectness, and inconsistency. 
+Such misalignments undermine user trust and pose severe ethical and legal challenges. 
+Our research is a pioneering effort in this domain, posing crucial questions about the potential of technology to rectify these disparities. 
+We postulate whether advanced techniques, precisely fine-tuning large language models (LLMs), could be leveraged to monitor and verify app behaviors against their declared commitments, ensuring unity and fortifying trust. 
+In our investigation, we comprehensively assess the flexibility and capability of LLMs across multiple training scenarios, establishing ten evaluation cases within four distinct strategies, including Zero-Shot, Manual Label Fine-Tuning, and LLM-generated label fine-tuning. 
+As a commitment to transparency and furthering research in this domain, we release a benchmark dataset and maintain a curated list of the examined Android applications. 
+Our findings contribute significantly to understanding the alignment of privacy policies and data safety declarations, setting the stage for future informed, transparent, and trustworthy app ecosystems.
 
 
 ## Software implementation
@@ -141,6 +146,3 @@ Full dataset can be found in the file `result/final_dataset.csv`
 |10K+ to 500K+| 295 apps|
 |1M+ to 50M+| 118 apps|
 |100M+ to 500M+| 10 apps|
-
-## License
-
