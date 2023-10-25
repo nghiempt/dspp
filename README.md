@@ -55,66 +55,64 @@ or [download a zip archive](https://github.com/nghiempt/dspp/archive/refs/heads/
 A copy of the repository is also archived at *insert DOI here*
 
 
-## Dependencies
+## Approach
 
-You'll need a working Python environment to run the code.
-The recommended way to set up your environment is through the
-`virtualenv Python` which
-provides the `conda` package manager.
-Virtualenv can be installed in your user directory and does not interfere with
-the system Python installation.
+We have somes way to collect data from browers. After, pre-proccessing data. This file below:
 
-We use `venv` virtual environments to manage the project dependencies in
-isolation.
-Thus, you can install our dependencies without causing conflicts with your
-setup (even with different Python versions).
+    approach/make_dataset/make_final_dataset_only_prompt.py
+    approach/make_dataset/make_resource_dataset.py
 
-Run the following command in the repository folder (where `environment.yml`
-is located) to create a separate environment and install all required
-dependencies in it:
+## Evaluation
 
-    virtualenv venv
+We have 10 cases. We use LLM models to generate result:
 
-## Reproducing the results
+    evaluation/case_03/code/generate_completion_by_gpt3.0.py
 
-Before running any code you must activate the conda environment:
+As same as for cases 4,5,6,7,8,9,10
 
-    source activate ENVIRONMENT_NAME
 
-or, if you're on Windows:
+We convert chat json format to message json format in:
 
-    activate ENVIRONMENT_NAME
+    helpers/convert_message_for_3.5.py
 
-This will enable the environment for your current terminal session.
-Any subsequent commands will use software that is installed in the environment.
+After that, we continue to convert to JSONL in:
 
-To build and test the software, produce all results and figures, and compile
-the manuscript PDF, run this in the top level of the repository:
+    helpers/convert_json_to_jsonl.py
 
-    make all
+Follow for this step to fine tuning GPT 3.5 turbo:
 
-If all goes well, the manuscript PDF will be placed in `manuscript/output`.
+1. Upload files
+    curl https://api.openai.com/v1/files \
+        -H "Authorization: Bearer $OPENAI_API_KEY" \
+        -F "purpose=fine-tune" \
+        -F "file=@path_to_your_file"
 
-You can also run individual steps in the process using the `Makefile`s from the
-`code` and `manuscript` folders. See the respective `README.md` files for
-instructions.
+2. Create a fine-tuning job
+    curl https://api.openai.com/v1/fine_tuning/jobs \
+        -H "Content-Type: application/json" \
+        -H "Authorization: Bearer $OPENAI_API_KEY" \
+        -d '{
+        "training_file": "TRAINING_FILE_ID",
+        "model": "gpt-3.5-turbo-0613"
+        }'
 
-Another way of exploring the code results is to execute the Jupyter notebooks
-individually.
-To do this, you must first start the notebook server by going into the
-repository top level and running:
+We can use terminal to follow fine tuning process:
 
-    jupyter notebook
+    pip install --upgrade openai
 
-This will start the server and open your default web browser to the Jupyter
-interface. In the page, go into the `code/notebooks` folder and select the
-notebook that you wish to view/run.
+    export OPENAI_API_KEY="<OPENAI_API_KEY>"
 
-The notebook is divided into cells (some have text while other have code).
-Each cell can be executed using `Shift + Enter`.
-Executing text cells does nothing and executing code cells runs the code
-and produces it's output.
-To execute the whole notebook, run all cells in order.
+    openai api fine_tuning.job.follow -i <YOUR_FINE_TUNE_JOB_ID>
+
+or
+
+    openai api fine_tuning.job.get -i <YOUR_FINE_TUNE_JOB_ID>
+
+You can check status for this proccess: validating-file -> running -> succeed
+
+Finally, we use the model after fine tuned to predict result:
+
+    case_03/code/predict_by_ft_gtp3.5.py
 
 
 ## Dataset detail
@@ -131,7 +129,7 @@ To execute the whole notebook, run all cells in order.
 | 9             | Body Plastic Surgery | com.ster.photo.surgery | 1 | 0 | 0 |
 | 10            | Family Photo Frame | com.Family.Photoframee | 1 | 0 | 0 |
 
-Full dataset can be found in the file `result/final_dataset.csv`
+Full dataset can be found in the file `final_results/450_apps.csv`
 
 |Category|Number of apps|
 |---|---|
