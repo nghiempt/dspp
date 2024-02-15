@@ -4,9 +4,9 @@ by
 Nghiem Pham Thanh;
 Bang Ngo Hai;
 Hung Nguyen Nhat;
+Tuan Le Thanh;
 Xuan Son Ha;
 Nghia Duong-Trung;
-Tuan Le Thanh;
 
 ## Abstract
 
