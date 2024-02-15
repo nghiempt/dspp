@@ -1,13 +1,5 @@
 # Unveiling Discrepancies in Android App Data Safety Declarations and Privacy Policies: An In-depth Analysis using Large Language Models
 
-by
-Nghiem Pham Thanh;
-Bang Ngo Hai;
-Hung Nguyen Nhat;
-Tuan Le Thanh;
-Xuan Son Ha;
-Nghia Duong-Trung;
-
 ## Abstract
 
 This paper delves into the critical discrepancies observed between data safety declarations and privacy policies across 450 Android applications, bringing to light the issues of incompleteness, incorrectness, and inconsistency. 
