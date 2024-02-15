@@ -8,15 +8,6 @@ Xuan Son Ha;
 Nghia Duong-Trung;
 Tuan Le Thanh;
 
-Official code implementation for ICDE 24 paper Unveiling Discrepancies in Android App Data Safety Declarations and Privacy Policies: An In-depth Analysis using Large Language Models.
-
-> This paper identifies critical discrepancies in data safety declarations and privacy policies among 450 Android apps, raising concerns about user trust and legal implications. The study explores the potential of advanced techniques, like fine-tuning large language models, to monitor and verify app behaviors against their stated commitments. To promote transparency, the research provides a benchmark dataset and a list of examined Android apps, contributing to a more trustworthy app ecosystem.
-
-![](figure)
-
-*Caption for the example figure with the main results.*
-
-
 ## Abstract
 
 This paper delves into the critical discrepancies observed between data safety declarations and privacy policies across 450 Android applications, bringing to light the issues of incompleteness, incorrectness, and inconsistency. 
